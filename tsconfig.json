@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "target": "es6",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "removeComments": true,
+    "outDir": "lib",
+    "lib": [
+      "es6",
+      "es2017"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    },
+    "types": [
+      "node",
+      "aws-sdk"
+    ]
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules", "**/*.js"],
+  "compileOnSave": false
+}
